@@ -2,32 +2,78 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600);
 @import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /*font copied from internet*/
-@font-face {
+
+@font-face 
+{
     font-family: "Gravity-Bold";
     src: url('/fonts/Gravity-Bold.otf');
 }
 
-@font-face {
+@font-face 
+{
     font-family: "Gravity-Regular";
     src: url('/fonts/Gravity-Regular.otf');
 }
 
-@font-face {
+@font-face 
+{
     font-family: "Gravity-Light";
     src: url('/fonts/Gravity-Light.otf');
 }
 
-@font-face {
+@font-face 
+{
     font-family: "Gravity-Book";
     src: url('/fonts/Gravity-Book.otf');
 }
 
-body
+/*body
 {
     background: url("https://i.redd.it/1htvyw5zhum11.png");
 	margin: 0px auto;
+    background-position: center,center;
 	background-size: cover;
 	background-repeat: no-repeat;
+}*/
+div[id="div1"]
+{
+	background: url("https://i.redd.it/1htvyw5zhum11.png");
+	margin: 0px auto;
+    background-position: center;
+    height: 760px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+body
+{
+	height: 1400px;    
+    margin: 0px;
+    width: auto;
+   
+}
+p[class="pad20"]
+ {
+    padding-top: 150px;
+    padding-right: 250px;
+    padding-left: 650px;
+    text-align: justify;
+	font-size: 20px;
+	font-family: 'Concert One', cursive;
+	font-weight: lighter;
+	text-align: center;
+	position: relative;
+}
+.circleImg
+{
+	border: 10px solid transparent;
+    border-image: url("http://pluspng.com/img-png/borders-png-hd-certificate-border-png-hd-free-printable-blank-certificate-borders-clipart-library-certificate-border-clip-art-1500-1125-png-1530.png") 50 round;
+	float: left;
+	margin: 0;
+	margin-top: 200px;
+	margin-left: 320px;
+	width: 150px;
+	height: 150px;
 }
 header 
 {
@@ -87,6 +133,8 @@ a:hover
 	transition: all 0.5s ease 0s;
 	/*background-color: white;*/
 	color: green;
+
+	/*plugin*/
 	background: -moz-linear-gradient(top,  
     #b0ca34 0%, #96c40d 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, 
@@ -94,6 +142,7 @@ a:hover
     color-stop(100%,#96c40d)); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(top,  
     #b0ca34 0%,#96c40d 100%);
+
 }
 a:active {
   color: #111;
@@ -129,15 +178,26 @@ nav ul li:last-child a {
 	font-size: 32px;
 	font-weight: lighter;
 }
-span
+strong
 {
 	font-family: 'Patrick Hand', cursive;
 	font-size: 40px;
-	font-weight: bolder;
 	position: left;
 	letter-spacing: 20px;
+	animation-name: example;
+  animation-duration: 20s;
 }
-
+span
+{
+	font-family: 'Patrick Hand', cursive;
+	font-weight: bold;
+}
+@keyframes example{
+  0%   {background-color: red;}
+  25%  {background-color: yellow;}
+  50%  {background-color: blue;}
+  100% {background-color: green;}
+}
 
 
 
