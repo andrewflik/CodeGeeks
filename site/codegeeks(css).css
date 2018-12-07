@@ -47,6 +47,7 @@ header::after
 }
 nav
 {
+	width: auto;
 	float: right;
 }
 nav ul
@@ -65,6 +66,14 @@ nav li
 }
 nav a
 {
+	/*padding for our nav elements*/
+	padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 8px;
+    /*transition for 0.5 sec*/
+	transition: all 0.5s ease 0s;
+	/*styling*/
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
@@ -73,9 +82,45 @@ nav a
 }
 a:hover
 {
-	background-color: white;
+	background-color:#002e5b;
+	 color:#fde428; 
+	transition: all 0.5s ease 0s;
+	/*background-color: white;*/
 	color: green;
+	background: -moz-linear-gradient(top,  
+    #b0ca34 0%, #96c40d 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, 
+    color-stop(0%,#b0ca34), 
+    color-stop(100%,#96c40d)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  
+    #b0ca34 0%,#96c40d 100%);
 }
+a:active {
+  color: #111;
+  }
+nav ul li:first-child a {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+a[href="#C++"]
+{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+a[href="#MC"]
+{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+nav ul li:last-child a {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
 .intial
 {
 	padding-top: 140px;
